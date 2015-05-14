@@ -398,13 +398,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+	background-attachment: fixed;
 }
 
-#indepth_puma_fondo1{
+#indepth_break_1{
 	background-image: url(../images/3-QUOTES/Imagen_1.jpg);
 }
 
-#indepth_puma_fondo2{
+#indepth_break_2{
 	background-image: url(../images/3-QUOTES/Imagen_3.jpg);
 }
 
@@ -564,10 +565,7 @@ margin-top: 15px;
 
 
 
-#indepth_intro{
-	padding-bottom: 30px;
-padding-top: 20px;
-	}
+
 
 #indepth_intro .indepth_quote, #indepth_intro .indepth_quote_autor{
 }
@@ -577,11 +575,7 @@ padding-top: 20px;
 }
 
 #indepth_page1{
-	background: url(../images/Foto_2.jpg) center bottom no-repeat, url(../images/Pixel_Foto1.png) center repeat;
-	height: 2650px;	
-	color: white;
-	padding-bottom: 30px;
-padding-top: 20px;
+
 	
 	
 }
