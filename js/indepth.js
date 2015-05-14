@@ -244,6 +244,7 @@ $(document).ready(function(){
 
 	 
 	var ventana_alto = $(window).height();
+	$('.indepth_puma_fondo').css("height",ventana_alto+"px");
 	//$("#indepth_break_2").css("height",)
 	if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Android')
     {   	
@@ -255,6 +256,7 @@ $(document).ready(function(){
     	 if(ventana_alto>700){
 	 	$('.indepth_break').css("height",ventana_alto+"px");
 	 	$('#indepth_cover').css("height",700+"px");
+	 	
 
 
 	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);
@@ -291,6 +293,7 @@ $(window).on("resize", function(){
     	 if(ventana_alto>600){
 	 	$('.indepth_break').css("height",ventana_alto+"px");
 	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);
+	 	$('.indepth_puma_fondo').css("height",ventana_alto+"px");
  	}
 	 if(navigator.platform == 'iPad'){
 	    //$("#indepth_parallax_back").css("background-size", "100%");

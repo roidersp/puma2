@@ -27,10 +27,10 @@
 	margin: auto;
 	margin-top: 10px;
 	cursor: pointer;
-	-webkit-animation: indepth_arrow_animation 5s infinite; /* Safari 4+ */
-	-moz-animation:    indepth_arrow_animation 5s infinite; /* Fx 5+ */
-	-o-animation:      indepth_arrow_animation 5s infinite; /* Opera 12+ */
-	animation:         indepth_arrow_animation 5s infinite; 
+	-webkit-animation: indepth_arrow_animation 4s infinite; /* Safari 4+ */
+	-moz-animation:    indepth_arrow_animation 4s infinite; /* Fx 5+ */
+	-o-animation:      indepth_arrow_animation 4s infinite; /* Opera 12+ */
+	animation:         indepth_arrow_animation 4s infinite; 
 	
 }
 
@@ -40,34 +40,34 @@
 
 @-webkit-keyframes indepth_arrow_animation {
   0%   { transform:  translate(0,0px); }
-  10%  { transform:  translate(0,8px);}
-  20%  { transform:  translate(0,0px);}
-  30%  { transform:  translate(0,8px);}
-  40%  { transform:  translate(0,0px);}
+  15%  { transform:  translate(0,8px);}
+  30%  { transform:  translate(0,0px);}
+  45%  { transform:  translate(0,8px);}
+  60%  { transform:  translate(0,0px);}
   100% { transform:  translate(0,0px); }
 }
 @-moz-keyframes indepth_arrow_animation {
   0%   { transform:  translate(0,0px); }
-  10%  { transform:  translate(0,8px);}
-  20%  { transform:  translate(0,0px);}
-  30%  { transform:  translate(0,8px);}
-  40%  { transform:  translate(0,0px);}
+  15%  { transform:  translate(0,8px);}
+  30%  { transform:  translate(0,0px);}
+  45%  { transform:  translate(0,8px);}
+  60%  { transform:  translate(0,0px);}
   100% { transform:  translate(0,0px); }
 }
 @-o-keyframes indepth_arrow_animation {
-   0%   { transform:  translate(0,0px); }
-  10%  { transform:  translate(0,8px);}
-  20%  { transform:  translate(0,0px);}
-  30%  { transform:  translate(0,8px);}
-  40%  { transform:  translate(0,0px);}
+  0%   { transform:  translate(0,0px); }
+  15%  { transform:  translate(0,8px);}
+  30%  { transform:  translate(0,0px);}
+  45%  { transform:  translate(0,8px);}
+  60%  { transform:  translate(0,0px);}
   100% { transform:  translate(0,0px); }
 }
 @keyframes indepth_arrow_animation {
- 0%   { transform:  translate(0,0px); }
-  10%  { transform:  translate(0,8px);}
-  20%  { transform:  translate(0,0px);}
-  30%  { transform:  translate(0,8px);}
-  40%  { transform:  translate(0,0px);}
+  0%   { transform:  translate(0,0px); }
+  15%  { transform:  translate(0,8px);}
+  30%  { transform:  translate(0,0px);}
+  45%  { transform:  translate(0,8px);}
+  60%  { transform:  translate(0,0px);}
   100% { transform:  translate(0,0px); }
 }
 
@@ -391,6 +391,21 @@
 	width: 90%;
 	max-width: 740px;
 	margin: auto;
+}
+
+.indepth_puma_fondo{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+#indepth_puma_fondo1{
+	background-image: url(../images/3-QUOTES/Imagen_1.jpg);
+}
+
+#indepth_puma_fondo2{
+	background-image: url(../images/3-QUOTES/Imagen_3.jpg);
 }
 
 
