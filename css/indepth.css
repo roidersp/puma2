@@ -401,11 +401,11 @@
 	background-attachment: fixed;
 }
 
-#indepth_break_1{
+#indepth_break_1 .indepth_parallax_back{
 	background-image: url(../images/3-QUOTES/Imagen_1.jpg);
 }
 
-#indepth_break_2{
+#indepth_break_2 .indepth_parallax_back{
 	background-image: url(../images/3-QUOTES/Imagen_3.jpg);
 }
 
