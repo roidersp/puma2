@@ -62,11 +62,20 @@
 	-moz-flex: 3 0px;
 	font-size: 18px;
 	color: white;
-	line-height: 46px;
 	padding-left: 20px;
 	font-weight: 400;
 }
 
+.indepth_barra_text_c{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.indepth_barra_text_c div{
+	display: table-cell;
+	vertical-align: middle;
+}
 
 
 .vimeo{
@@ -338,7 +347,6 @@
 
 .indepth_pages{
 	width: 100%;
-	min-width: 960px;
 	position: relative;
 	overflow: hidden;
 	background-color: white;
@@ -349,7 +357,6 @@
 
 .indepth_page{
 	width: 100%;
-	min-width: 960px;
 	position: relative;
 	overflow: hidden;
 	background-color: white;
@@ -471,6 +478,12 @@
 	text-align: center;
 }
 
+ .indepth_page_body img{
+	max-width: 646px;
+	width: 96%;
+	
+}
+
 #indepth_diagonal{
 	width: 100%;
 	height: 120px;
@@ -496,21 +509,29 @@
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: 30px;
+	
 }
 
 .indepth_caracteristicas_cont{
 	display: table;
 	margin: auto;
 	margin: 40px auto;
+	margin-bottom: 0px;
 }
 
 .indepth_carac_logos_cont{
-	display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-	display: -moz-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+	display: table;
 	margin: 30px auto;
+}
+
+.indepth_caracteristiucas_triangulo_cont{
+	
+	
+}
+
+.indepth_caracteristiucas_triangulo_cont img{
+	width: auto;
+	display: table;
 }
 
 .indepth_logo_cont{
@@ -519,12 +540,30 @@
 	border: 3px solid black;
 	border-radius: 50%;
 	text-align: center;
-	display: table;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 80%;
-	float: left;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.indepth_logo_cont:hover{
+	border: 3px solid #ef2327;
+}
+
+.indepth_caract_logo_item{
+	display: table;
+	display: inline-block;
 	margin: 25px;
+	font-size: 24px;
+}
+
+.indepth_caract_logo_item:last-child{
+	margin-right: 0;
+}
+
+.indepth_caract_logo_item:first-child{
+	margin-left: 0;
 }
 
 #indepth_caract_1{
@@ -547,11 +586,10 @@
 	width: 100%;
 	height: 300px;
 	display: table;
-	background-color: #417c89;
+	background-color: #508E9A;
 }
 
 .indepth_caract_text_cont{
-	
 	color: white;
 	font-size: 30px;
 	display: table-cell;
@@ -748,10 +786,9 @@
 	height: 100%;
 	background-size: cover;
 	background-color: #000;
-	top: 0px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 50% 50%;
+	background-position: top center;
 }
 
 
@@ -1011,15 +1048,12 @@ margin-top: 15px;
 }
 
 /*** Movil ****/
-@media screen and (max-width:1109px) {
-	.indepth_mapa_left{
-		max-width: 680px;
-	}
+@media screen and (max-width:1024px) {
+	.indepth_logo_cont{
+		width: 150px;
+		height: 150px;
+		margin: 20px;
 	
-	.indepth_container_left{
-
-		margin-right: 0px;
-
 	}
 }
 
@@ -1075,7 +1109,15 @@ margin-top: 15px;
 }
 
 @media screen and (max-width: 800px) {
-
+	
+	.indepth_logo_cont{
+		width: 120px;
+		height: 120px;
+		margin: 16px;
+	
+	}
+	
+	
 	#indepth_page3{
 		width: 100%;
 	}
@@ -1156,7 +1198,7 @@ margin-top: 15px;
 	}
 	
 	.indepth_page_body{
-		width:95%;
+		width:100%;
 		margin: 0 auto;
 	}
 	
@@ -1227,12 +1269,8 @@ margin-top: 15px;
 }
 
 @media screen and (max-width: 700px) {
-	.indepth_quote_container{
-		width: 100%;
-	}
-	
-	.indepth_mapa_r{
-		width: 100%;
+	#indepth_barra_text{
+		font-size: 14px;
 	}
 	
 }
@@ -1287,6 +1325,27 @@ margin-top: 15px;
 }
 
 @media screen and (max-width: 605px) {
+	.indepth_logo_cont{
+		width: 90px;
+		height: 90px;
+		margin: 5px;
+	
+	}
+	
+	.indepth_caract_text_cont{
+		font-size: 24px;
+	}
+	
+	#indepth_barra_puma {
+	  width: 65px;
+	}
+	
+	#indepth_barra_quiero {
+	  width: 75px;
+	  background-position: 0px 50%;
+	  padding-left: 30px;
+	  font-size: 16px;
+	}
 	
 .vimeo{
 	position: absolute;
@@ -1416,13 +1475,24 @@ margin-top: 15px;
 }
 
 @media screen and (max-width: 414px) {
-
+	
+	.indepth_logo_cont{
+		width: 75px;
+		height: 75px;
+		margin: 8px;
+	
+	}
+	
 	#indepth_cover{
 		height: 540px;	
 	}
 	
 	#indepth_evo{
 		width: 90%;
+	}
+	
+	#indepth_barra_puma{
+		display: none;
 	}
 	
 	.indepth_docs_ball{
@@ -1626,23 +1696,38 @@ margin-top: 15px;
 	
 }
 	
-@media screen and (max-width: 360px) {
-			.indepth_docs_ball {
-margin: 0 12px;
+@media screen and (max-width: 375px) {
+	.indepth_logo_cont{
+			width: 60px;
+			height: 60px;
+			margin: 8px;
+		
+		}
+
 }
-
-
-
-
-
-
+	
+@media screen and (max-width: 360px) {
+	#indepth_barra_quiero{
+		font-size: 14px;
+		width: 65px
 	}
 	
-	@media screen and (max-width: 320px) {
-.indepth_box{
-	margin:  10px 0;
-}
+	#indepth_barra_text{
+		font-size: 12px;
 	}
+	
+	.indepth_logo_cont{
+			width: 55px;
+			height: 55px;
+			margin: 5px;
+		
+		}
+		
+		.indepth_caracteristicas_title{
+			font-size: 34px;
+		}
+
+}
 
 
 
