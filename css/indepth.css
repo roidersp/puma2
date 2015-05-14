@@ -14,9 +14,13 @@
 	  display: -ms-flexbox;
 	  display: -webkit-flex;
 	  display: flex;  
-	  
 	  -webkit-flex-flow: row wrap;
 	  flex-flow: row wrap;
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 100;
+	  color: white;
 }
 
 #indepth_loquiero_bar img{
@@ -25,17 +29,27 @@
 
 .indepth_barra_item{
 	height: 100%;
-	
-	background-image: url(../images/1-PORTADA/BARRA/LoQuiero_fondoCustom.png);
+	background-color: #508e9a;
 	
 }
 
 #indepth_barra_puma{
 	width: 85px;
+	background-image: url(../images/1-PORTADA/Logo_Puma.svg);
+	background-position: center center;
+	background-size: auto 60%;
+	background-repeat: no-repeat;
 }
 
 #indepth_barra_quiero{
-	width: 140px;
+	width: 95px;
+	background-image: url(../images/1-PORTADA/BARRA/LoQuiero_etiqueta.png);
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	padding-left: 45px;
+	text-transform: uppercase;
+	line-height: 46px;
+	font-size: 18px;
 }
 
 .indepth_barra_sep{
@@ -46,6 +60,11 @@
 	flex: 3 0px;
 	-webkit-flex: 3 0px;
 	-moz-flex: 3 0px;
+	font-size: 18px;
+	color: white;
+	line-height: 46px;
+	padding-left: 20px;
+	font-weight: 400;
 }
 
 
