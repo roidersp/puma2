@@ -231,19 +231,20 @@ $(document).ready(function(){
 
 	 var ventana_alto = $(window).height();
 	var ventana_ancho = $(window).width();
+	 if(ventana_ancho>600){
+		$(".vimeoFrame").css({
+			"width": (ventana_ancho)+"px",
+			"height": (ventana_alto-100)+"px"	
+		});
 	
-	$(".vimeoFrame").css({
-		"width": (ventana_ancho-100)+"px",
-		"height": (ventana_alto-100)+"px"	
-	});
 	
-	$(".vimeo").css({
-		"width": (ventana_ancho+150)+"px",
-		"height": (ventana_alto+120)+"px"	
-	})
+		$(".vimeo").css({
+			"width": (ventana_ancho+150)+"px",
+			"height": (ventana_alto+120)+"px"	
+		});
+	}
 
 	 
-	var ventana_alto = $(window).height();
 	$('.indepth_puma_fondo').css("height",ventana_alto+"px");
 	//$("#indepth_break_2").css("height",)
 	if(navigator.platform == 'iPad' || navigator.platform == 'iPhone' || navigator.platform == 'iPod' || navigator.platform == 'Android')
@@ -253,13 +254,17 @@ $(document).ready(function(){
     }else{
     	$('#indepth_cover').css("height",(ventana_alto-100)+"px");
     	
-    	 if(ventana_alto>700){
-	 	$('.indepth_break').css("height",ventana_alto+"px");
-	 	$('#indepth_cover').css("height",700+"px");
+    	
+    	 if(ventana_alto<800){
+	 	
+	 	$('#indepth_cover').css("height",600+"px");
+	 	
 	 	
 
 
 	 	$('#indepth_cover .indepth_cover_back_body').css("top",ventana_alto*.60);
+ 	}else{
+	 	$('.indepth_break').css("height",ventana_alto+"px");
  	}
 	 //ventana_alto=ventana_alto-(ventana_alto*.15)
 	 	//$('.indepth_anuncio_section').css("height",ventana_alto-(ventana_alto*.10)+"px");
@@ -278,16 +283,17 @@ $(window).on("resize", function(){
 	
 	 var ventana_alto = $(window).height();
 	var ventana_ancho = $(window).width();
-	
-	$(".vimeoFrame").css({
-		"width": (ventana_ancho-100)+"px",
-		"height": (ventana_alto-100)+"px"	
-	});
-	
-	$(".vimeo").css({
-		"width": (ventana_ancho+150)+"px",
-		"height": (ventana_alto+120)+"px"	
-	})
+	if(ventana_ancho>600){
+		$(".vimeoFrame").css({
+			"width": (ventana_ancho-100)+"px",
+			"height": (ventana_alto-100)+"px"	
+		});
+		
+		$(".vimeo").css({
+			"width": (ventana_ancho+150)+"px",
+			"height": (ventana_alto+120)+"px"	
+		});
+	}
 	var ventana_alto = $(window).height();
     	$('#indepth_cover').css("height",(ventana_alto-100)+"px");
     	 if(ventana_alto>600){
