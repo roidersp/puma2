@@ -523,8 +523,6 @@
 	display: table;
 	margin: 30px auto;
 	margin-bottom: 0;
-	position: relative;
-	padding-bottom: 40px;
 }
 
 .indepth_caracteristiucas_triangulo_cont{
@@ -552,15 +550,18 @@
 	cursor: pointer;
 }
 
-.indepth_logo_cont:hover{
-	border: 3px solid #ef2327;
-}
+
 
 .indepth_caract_logo_item{
 	display: table;
 	display: inline-block;
 	margin: 25px;
 	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.indepth_caract_logo_item.rel{
+	position: relative;
 }
 
 .indepth_caract_logo_item:last-child{

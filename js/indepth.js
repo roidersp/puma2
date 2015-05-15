@@ -14,7 +14,16 @@ var posicion_slider2=0;
 
 
 
-
+$(".indepth_caract_logo_item").on("mouseenter", function(){
+	$(this).find(".indepth_logo_cont").css("border","3px solid #ef2327");
+	console.log("on");
+}).on("mouseleave", function(){
+	$(this).find(".indepth_logo_cont").css("border","3px solid black");
+	console.log("off");
+}).on("click", function(){
+	$(".indepth_logo_cont").css("border","3px solid black");
+	$(this).find(".indepth_logo_cont").css("border","3px solid #ef2327");
+});
 
 
 $('#indepth_footer').waypoint(function(direction) {
