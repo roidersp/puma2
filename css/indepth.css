@@ -522,11 +522,16 @@
 .indepth_carac_logos_cont{
 	display: table;
 	margin: 30px auto;
+	position: relative;
 	margin-bottom: 0;
 }
 
-.indepth_caracteristiucas_triangulo_cont{
-	display: table;
+#indepth_caracteristiucas_triangulo_cont{
+	display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;  
 	position: absolute;
 	bottom: 0;
 	
@@ -553,18 +558,17 @@
 
 
 .indepth_caract_logo_item{
-	display: table;
 	display: inline-block;
 	margin: 25px;
 	font-size: 24px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 }
 
 .indepth_caract_logo_item.rel{
 	position: relative;
 }
 
-.indepth_caract_logo_item:last-child{
+.indepth_caract_logo_item.last{
 	margin-right: 0;
 }
 
@@ -597,14 +601,16 @@
 
 .indepth_caract_text_cont{
 	color: white;
-	font-size: 30px;
+	font-size: 28px;
 	display: table-cell;
 	vertical-align: middle;
+	font-weight: 400;
 }
 .indepth_caract_text_cont_in{
 	width: 90%;
 	max-width: 740px;
 	margin: auto;
+	display: none;
 }
 
 .indepth_puma_fondo{
@@ -859,7 +865,7 @@ margin-top: 15px;
 }
 
 .indepth_tenis img{
-	position: absolute;
+	position: relative;
 	top:0;
 	left: 0;
 	display: none;
