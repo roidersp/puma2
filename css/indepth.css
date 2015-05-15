@@ -23,6 +23,12 @@
 	  color: white;
 }
 
+#indepth_loquiero_bar a{
+	height: 100%;
+	color: white;
+	text-decoration: none;
+}
+
 #indepth_loquiero_bar img{
 	width: 31px;
 }
