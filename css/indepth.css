@@ -522,10 +522,15 @@
 .indepth_carac_logos_cont{
 	display: table;
 	margin: 30px auto;
+	margin-bottom: 0;
+	position: relative;
+	padding-bottom: 40px;
 }
 
 .indepth_caracteristiucas_triangulo_cont{
-	
+	display: table;
+	position: absolute;
+	bottom: 0;
 	
 }
 
