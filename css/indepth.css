@@ -866,7 +866,8 @@ margin-top: 15px;
 
 .indepth_tenis img{
 	position: relative;
-	
+	top:0;
+	left: 0;
 	display: none;
 }
 
