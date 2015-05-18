@@ -6,6 +6,10 @@
 }
 
 
+#nav-bar-wrapper{
+	display: none;
+}
+
 #indepth_loquiero_bar{
 	width: 100%;
 	height: 46px;
@@ -16,7 +20,7 @@
 	  display: flex;  
 	  -webkit-flex-flow: row wrap;
 	  flex-flow: row wrap;
-	  position: fixed;
+	  position: absolute;
 	  top: 0;
 	  left: 0;
 	  z-index: 100;
@@ -427,6 +431,7 @@
 	background-size: 1440px auto , auto;
 	background-position: top center, center;
 	background-repeat: no-repeat, repeat;
+	background-position-y: 60px;
 	 
 	
 }
@@ -1124,6 +1129,10 @@ margin-top: 15px;
 	.indepth_docs_description_content{
 		font-size: 17px;
 	}
+	.indepth_caract_logo_item{
+		margin: auto;
+		margin-bottom: 50px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -1134,6 +1143,8 @@ margin-top: 15px;
 		margin: 16px;
 	
 	}
+	
+	
 	
 	
 	#indepth_page3{
@@ -1350,6 +1361,10 @@ margin-top: 15px;
 	
 	}
 	
+	.indepth_caract_logo_item{
+		font-size: 14px;
+	}
+	
 	.indepth_caract_text_cont{
 		font-size: 24px;
 	}
@@ -1489,10 +1504,6 @@ margin-top: 15px;
 	.indepth_tenis {
 		padding: 60px 50px;
 	}
-
-}
-
-@media screen and (max-width: 414px) {
 	
 	.indepth_logo_cont{
 		width: 75px;
@@ -1500,6 +1511,12 @@ margin-top: 15px;
 		margin: 8px;
 	
 	}
+
+}
+
+@media screen and (max-width: 414px) {
+	
+	
 	
 	#indepth_cover{
 		height: 540px;	

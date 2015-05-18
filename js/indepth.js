@@ -1,6 +1,6 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="becebde4-0d5b-4345-b62b-403c38d81082";
+var disqus_url="puma-dragon-evospeed-potencia-y-poder";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
@@ -64,11 +64,16 @@ $(".indepth_caract_logo_item").on("mouseenter", function(){
 });
 
 
-$('#indepth_footer').waypoint(function(direction) {
+
+
+
+$('.indepth_pages').waypoint(function(direction) {
 	 if(direction=='down'){
+		 $("#indepth_loquiero_bar").fadeOut("slow");
 		 $(".indepth_share").fadeOut("slow");
 	 }else{
 		  $(".indepth_share").fadeIn("slow");
+		  $("#indepth_loquiero_bar").fadeIn("slow");
 	 }
 	 
 	
